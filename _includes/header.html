@@ -17,7 +17,11 @@
             <a href="directions">Directions</a>
           </li>
           <li>
-            <a href="information">Information and Accessibility</a>
+            {% if page.name == "information.md" %}
+              <a href="information" class="current">Information and Accessibility</a>
+            {% else %}
+              <a href="information">Information and Accessibility</a>
+            {% endif %}
           </li>
         </ul>
         <ul class="secondaryMenu">

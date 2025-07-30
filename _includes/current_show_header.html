@@ -41,15 +41,38 @@
           </div>
         <div class="menuItems">
           <ul class="mainMenu">
+            {% if page.name == "index.md" %}
+              <li>
+                <a href="/" class="current">Program</a>
+              </li>
+            {% else %}
+              <li>
+                <a href="/">Program</a>
+              </li>
+            {% endif %}
             <li>
-              <a href="/">Program</a>
+              {% if page.name == "directions.md" %}
+                <a href="/directions" class="current">Directions</a>
+              {% else %}
+                <a href="/directions">Directions</a>
+              {% endif %}
             </li>
             <li>
-              <a href="/directions">Directions</a>
+              {% if page.name == "information.md" %}
+              <a href="/information" class="current">Information and Accessibility</a>
+              {% else %}
+                <a href="/information">Information and Accessibility</a>
+              {% endif %}
             </li>
-            <li>
-              <a href="/information">Information and Accessibility</a>
-            </li>
+            {% if page.name == "feedback.md" %}
+              <li>
+                <a href="/feedback" class="current">Leave Feedback</a>
+              </li>
+            {% else %}
+              <li>
+                <a href="/feedback">Leave Feedback</a>
+              </li>
+            {% endif %}
           </ul>
           <ul class="secondaryMenu">
             <li>

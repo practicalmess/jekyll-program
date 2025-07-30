@@ -126,6 +126,11 @@ bios: true
 
 ---
 
+<div class="programHeader">
+  <div class="heroBannerImg">
+    <img src="{{ page.imgSrc }}" alt="{{ page.imgAlt }}" class="heroBannerImage"/>
+  </div>
+</div>
 <h1 class="fullTitle">{{ page.title }}</h1>
 <div class="dates">
   <div class="datesByVenue">
@@ -156,15 +161,16 @@ bios: true
     </div>
   </div>
 </div>
-<p>{{ page.intro }}</p>
+<p>The entire show lasts around two hours. <span class="italic">Samantha Spade</span> is approximately 40 minutes and <span class="italic">After the Thin Man</span> is approximately 60 minutes with a 10 minute intermission in between. House doors open at 7:30 PM to give time to buy or pick up reserved tickets, purchase refreshments, and find your seat before the show starts at 8 PM.</p>
+
 
 <div class="buttonsAndLinks">
   <a href="{{ page.ticketLink }}" target="_blank" class="ticketLink">
     Buy or Reserve Your Ticket
   </a>
 </div>
-<p>The entire show lasts around two hours. <span class="italic">Samantha Spade</span> is approximately 40 minutes and <span class="italic">After the Thin Man</span> is approximately 60 minutes with a 10 minute intermission in between. House doors open at 7:30 PM to give time to buy or pick up reserved tickets, purchase refreshments, and find your seat before the show starts at 8 PM.</p>
-<p>This year's Summer Mysteries are lighthearted in tone but they are murder mysteries that touch on more serious subjects, albeit in a humorous way. Both plays also include some loud and startling practical sound effects. For more information, please see the "About the Show" sections of the "Information and Accessibility" page liked below.</p>
+<p>{{ page.intro }}</p>
+<p>This year's Summer Mysteries are lighthearted in tone but they are murder mysteries that touch on more serious subjects, albeit in a humorous way. Both plays also include some loud and startling practical sound effects. For more information, please see the "About the Show" sections of the "Information and Accessibility" page linked below.</p>
 <div class="buttonsAndLinks">
   <a href="directions">Directions</a>
   <a href="information">Information and Accessibility</a>

@@ -13,20 +13,8 @@ body.summer-mysteries-theme {
   --background-dark: #343446;
   --body-background: #f4f4f4;
   --text-highlight: #4d5031;
-  --highlight: #f5320b;
-  --menu-links: red;
-  --menu-background: white;
-}
-
-body.summer-mysteries-theme-dark {
-  --text-primary: #343446;
-  --text-secondary: #4d5031;
-  --text-header: #4d5031;
-  --background-dark: #343446;
-  --body-background: #d9d9d9;
-  --text-highlight: #4d5031;
-  --highlight: #f5320b;
-  --menu-links: red;
+  --highlight: #b00707;
+  --menu-links: #b00707;
   --menu-background: white;
 }
 
@@ -132,7 +120,12 @@ p {
 
 a {
   font-size: 1.05em;
-  color: var(--menu-links)
+  color: var(--menu-links);
+  font-weight: bold;
+}
+a.current {
+  color: var(--text-primary);
+  text-decoration: none;
 }
 
 /* Styling for the image */
@@ -456,7 +449,6 @@ img {
         border-radius: 5px;
         text-decoration: none;
         margin: 1em 0 1em 0;
-        font-weight: 400;
       }
     }
   }
